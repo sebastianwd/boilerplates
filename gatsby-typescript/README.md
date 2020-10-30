@@ -1,4 +1,4 @@
-# gatsby-modern-boilerplate-typescript
+# Gatsby Typescript
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sebastianwd/gatsby-modern-boilerplate-typescript)
 
@@ -6,16 +6,14 @@
 
 - Absolute imports with alias "@"
 
-- Gatsby's GraphQL queries and schemas intellisense autocompletion thanks to graphql-codegen and [gatsby-plugin-typegen](https://www.gatsbyjs.org/packages/gatsby-plugin-typegen/)
+- Gatsby's GraphQL queries and schemas intellisense autocompletion thanks to graphql-codegen
 
-- modern css reset and persisting theming system with [Emotion](https://github.com/emotion-js/emotion)
+- Modern css reset
 
 ## Prerequisites
 
-- Node (see [.nvmrc](./.nvmrc) for version)
+- Extensions :
 
-- Recommended VSCode extensions :
-
-  - Apollo GraphQL
+  - Apollo GraphQL <=v1.9.2
   - Prettier
   - ESLint
