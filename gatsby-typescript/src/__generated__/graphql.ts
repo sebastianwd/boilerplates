@@ -2072,6 +2072,7 @@ export enum SitePageFieldsEnum {
   PluginCreatorPluginOptionsAliasTheme = 'pluginCreator___pluginOptions___alias____theme',
   PluginCreatorPluginOptionsAliasGenerated = 'pluginCreator___pluginOptions___alias____generated',
   PluginCreatorPluginOptionsAliasUtils = 'pluginCreator___pluginOptions___alias____utils',
+  PluginCreatorPluginOptionsAliasScreens = 'pluginCreator___pluginOptions___alias____screens',
   PluginCreatorPluginOptionsExtensions = 'pluginCreator___pluginOptions___extensions',
   PluginCreatorPluginOptionsComponent = 'pluginCreator___pluginOptions___component',
   PluginCreatorPluginOptionsFonts = 'pluginCreator___pluginOptions___fonts',
@@ -2287,6 +2288,7 @@ export enum SitePluginFieldsEnum {
   PluginOptionsAliasTheme = 'pluginOptions___alias____theme',
   PluginOptionsAliasGenerated = 'pluginOptions___alias____generated',
   PluginOptionsAliasUtils = 'pluginOptions___alias____utils',
+  PluginOptionsAliasScreens = 'pluginOptions___alias____screens',
   PluginOptionsExtensions = 'pluginOptions___extensions',
   PluginOptionsComponent = 'pluginOptions___component',
   PluginOptionsFonts = 'pluginOptions___fonts',
@@ -2444,6 +2446,7 @@ export type SitePluginPluginOptionsAlias = {
   _theme: Maybe<Scalars['String']>
   _generated: Maybe<Scalars['String']>
   _utils: Maybe<Scalars['String']>
+  _screens: Maybe<Scalars['String']>
 }
 
 export type SitePluginPluginOptionsAliasFilterInput = {
@@ -2456,6 +2459,7 @@ export type SitePluginPluginOptionsAliasFilterInput = {
   _theme: Maybe<StringQueryOperatorInput>
   _generated: Maybe<StringQueryOperatorInput>
   _utils: Maybe<StringQueryOperatorInput>
+  _screens: Maybe<StringQueryOperatorInput>
 }
 
 export type SitePluginPluginOptionsFilterInput = {

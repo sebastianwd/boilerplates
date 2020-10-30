@@ -29,7 +29,7 @@ module.exports = {
         background_color: `#17171A`,
         theme_color: `#00fff5`,
         display: `minimal-ui`,
-        icon: `src/images/site-logo.png`, // This path is relative to the root of the site.
+        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-offline`,
@@ -46,6 +46,7 @@ module.exports = {
           '@theme': path.resolve(__dirname, 'src/theme'),
           '@generated': path.resolve(__dirname, 'src/__generated__'),
           '@utils': path.resolve(__dirname, 'src/utils'),
+          '@screens': path.resolve(__dirname, 'src/screens'),
         },
         extensions: ['js', 'tsx', 'ts', 'jsx'],
       },
