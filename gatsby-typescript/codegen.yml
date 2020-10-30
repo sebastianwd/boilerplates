@@ -1,0 +1,24 @@
+overwrite: true
+schema: 'http://localhost:8000/___graphql'
+documents: 
+  - "./src/**/*.{ts,tsx}"
+  - "./node_modules/gatsby*/!(node_modules)/**/*.js"
+  - './node_modules/gatsby-transformer-sharp/src/*.js'
+  - './node_modules/gatsby-image/src/*.js'
+generates:
+  src/__generated__/graphql.ts:
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-react-apollo'
+    config:
+      avoidOptionals: true
+      maybeValue: 'T extends PromiseLike<infer U> ? Promise<U | undefined> : T | undefined'
+    hooks:
+      afterOneFileWrite:
+        - eslint --fix
+  ./graphql.schema.json:
+    plugins:
+      - 'introspection'
+    config:
+      minify: true
